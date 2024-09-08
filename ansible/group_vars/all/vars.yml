@@ -1,0 +1,15 @@
+---
+partitions: []
+ram: false
+swap: false
+cpus: false
+mellon_default_files: false
+
+apache_auth_users: 
+  - hyr5079@psu.edu
+  - etb5327@psu.edu
+  - kca2@psu.edu
+  - jec13@psu.edu
+  - kak5318@psu.edu
+  - cdc5064@psu.edu
+

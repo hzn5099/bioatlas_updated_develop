@@ -1,0 +1,31 @@
+services:
+  db:
+    container_name: db
+    image: mysql:8
+    restart: always
+    command: --mysql-native-password=ON
+    environment:
+      MYSQL_DATABASE: bioatlas-local
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+      MYSQL_ROOT_PASSWORD: admin
+    volumes:
+      - ./docker_config/db_load:/docker-entrypoint-initdb.d
+      - ./docker_config/mysql:/etc/mysql/conf.d
+    ports:
+      - "3306:3306"
+  bioatlas-capstone:
+    build: 
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./php/bioatlas:/data/php/bioatlas/bioatlas
+      - ./docker_config/docker-config.php:/data/php/bioatlas/bioatlas/zfatlasDump/config.php
+      - ./docker_config/info.php:/data/php/bioatlas/bioatlas/zfatlasDump/labels/info.php
+      - ./php/assests/EC2:/data/php/bioatlas/bioatlas/zfatlasDump/labels/assets/EC2
+      - /tmp/bioatlas/uploads:/data/php/uploads
+      - /tmp/bioatlas/thumbnails:/data/thumbnails
+      - /tmp/bioatlas/tmp:/tmp
+    ports:
+      - 8080:80
+    depends_on:
+      - db

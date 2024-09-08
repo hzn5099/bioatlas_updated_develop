@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DAHRA Coronal 3dpf</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BQF4WF49Z7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BQF4WF49Z7');
+    </script>
+    <meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="../assets/css/carusel.css"> -->
+    <!-- <link rel="stylesheet" href="../assets/css/new.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/max_colored_10.ico">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    <style type="text/css">.dg ul{list-style:none;margin:0;padding:0;width:100%;clear:both}.dg.ac{position:fixed;top:0;left:0;right:0;height:0;z-index:0}.dg:not(.ac) .main{overflow:hidden}.dg.main{-webkit-transition:opacity .1s linear;transition:opacity .1s linear}.dg.main.taller-than-window{overflow-y:auto}.dg.main.taller-than-window .close-button{opacity:1;margin-top:-1px;border-top:1px solid #2c2c2c}.dg.main ul.closed .close-button{opacity:1!important}.dg.main .close-button.drag,.dg.main:hover .close-button{opacity:1}.dg.main .close-button{-webkit-transition:opacity .1s linear;transition:opacity .1s linear;border:0;position:absolute;line-height:19px;height:20px;cursor:pointer;text-align:center;background-color:#000}.dg.main .close-button:hover{background-color:#111}.dg.a{float:right;margin-right:15px;overflow-x:hidden}.dg.a.has-save>ul{margin-top:27px}.dg.a.has-save>ul.closed{margin-top:0}.dg.a .save-row{position:fixed;top:0;z-index:1002}.dg li{-webkit-transition:height .1s ease-out;transition:height .1s ease-out}.dg li:not(.folder){cursor:auto;height:27px;line-height:27px;overflow:hidden;padding:0 4px 0 5px}.dg li.folder{padding:0;border-left:4px solid transparent}.dg li.title{cursor:pointer;margin-left:-4px}.dg .closed li:not(.title),.dg .closed ul li,.dg .closed ul li>*{height:0;overflow:hidden;border:0}.dg .cr{clear:both;padding-left:3px;height:27px}.dg .property-name{cursor:default;float:left;clear:left;width:40%;overflow:hidden;text-overflow:ellipsis}.dg .c{float:left;width:60%}.dg .c input[type=text]{border:0;margin-top:4px;padding:3px;width:100%;float:right}.dg .has-slider input[type=text]{width:30%;margin-left:0}.dg .slider{float:left;width:66%;margin-left:-5px;margin-right:0;height:19px;margin-top:4px}.dg .slider-fg{height:100%}.dg .c input[type=checkbox]{margin-top:9px}.dg .c select{margin-top:5px}.dg .cr.boolean,.dg .cr.boolean *,.dg .cr.function,.dg .cr.function *,.dg .cr.function .property-name{cursor:pointer}.dg .selector{display:none;position:absolute;margin-left:-9px;margin-top:23px;z-index:10}.dg .c:hover .selector,.dg .selector.drag{display:block}.dg li.save-row{padding:0}.dg li.save-row .button{display:inline-block;padding:0 6px}.dg.dialogue{background-color:#222;width:460px;padding:15px;font-size:13px;line-height:15px}#dg-new-constructor{padding:10px;color:#222;font-family:Monaco,monospace;font-size:10px;border:0;resize:none;box-shadow:inset 1px 1px 1px #888;word-wrap:break-word;margin:12px 0;display:block;width:440px;overflow-y:scroll;height:100px;position:relative}#dg-local-explain{display:none;font-size:11px;line-height:17px;border-radius:3px;background-color:#333;padding:8px;margin-top:10px}#dg-local-explain code{font-size:10px}#dat-gui-save-locally{display:none}.dg{color:#eee;font:11px Lucida Grande,sans-serif;text-shadow:0 -1px 0 #111}.dg.main::-webkit-scrollbar{width:5px;background:#1a1a1a}.dg.main::-webkit-scrollbar-corner{height:0;display:none}.dg.main::-webkit-scrollbar-thumb{border-radius:5px;background:#676767}.dg li:not(.folder){background:#1a1a1a;border-bottom:1px solid #2c2c2c}.dg li.save-row{line-height:25px;background:#dad5cb;border:0}.dg li.save-row select{margin-left:5px;width:108px}.dg li.save-row .button{margin-left:5px;margin-top:1px;border-radius:2px;font-size:9px;line-height:7px;padding:4px 4px 5px;background:#c5bdad;color:#fff;text-shadow:0 1px 0 #b0a58f;box-shadow:0 -1px 0 #b0a58f;cursor:pointer}.dg li.save-row .button.gears{background:#c5bdad url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJJREFUeNpiYKAU/P//PwGIC/ApCABiBSAW+I8AClAcgKxQ4T9hoMAEUrxx2QSGN6+egDX+/vWT4e7N82AMYoPAx/evwWoYoSYbACX2s7KxCxzcsezDh3evFoDEBYTEEqycggWAzA9AuUSQQgeYPa9fPv6/YWm/Acx5IPb7ty/fw+QZblw67vDs8R0YHyQhgObx+yAJkBqmG5dPPDh1aPOGR/eugW0G4vlIoTIfyFcA+QekhhHJhPdQxbiAIguMBTQZrPD7108M6roWYDFQiIAAv6Aow/1bFwXgis+f2LUAynwoIaNcz8XNx3Dl7MEJUDGQpx9gtQ8YCueB+D26OECAAQDadt7e46D42QAAAABJRU5ErkJggg==) 2px 1px no-repeat;height:7px;width:8px}.dg li.save-row .button:hover{background-color:#bab19e;box-shadow:0 -1px 0 #b0a58f}.dg li.folder{border-bottom:0}.dg li.title{padding-left:16px;background:#000 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat;cursor:pointer;border-bottom:1px solid hsla(0,0%,100%,.2)}.dg .closed li.title{background-image:url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlGIWqMCbWAEAOw==)}.dg .cr.boolean{border-left:3px solid #806787}.dg .cr.color{border-left:3px solid}.dg .cr.function{border-left:3px solid #e61d5f}.dg .cr.number{border-left:3px solid #2fa1d6}.dg .cr.number input[type=text]{color:#2fa1d6}.dg .cr.string{border-left:3px solid #1ed36f}.dg .cr.string input[type=text]{color:#1ed36f}.dg .cr.boolean:hover,.dg .cr.function:hover{background:#111}.dg .c input[type=text]{background:#303030;outline:none}.dg .c input[type=text]:hover{background:#3c3c3c}.dg .c input[type=text]:focus{background:#494949;color:#fff}.dg .c .slider{background:#303030;cursor:ew-resize}.dg .c .slider-fg{background:#2fa1d6;max-width:100%}.dg .c .slider:hover{background:#3c3c3c}.dg .c .slider:hover .slider-fg{background:#44abda}
+    </style>
+</head>
+<body style="overflow: hidden;">
+<!-- <div id="mySidenav" class="sidenav"> -->
+<!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+<!-- <a href="#">Clients</a> -->
+<!-- <a href="#">Contact</a> -->
+<!-- </div> -->
+
+<!-- Use any element to open the sidenav -->
+<!-- <span onclick="openNav()">open</span> -->
+
+<!-- <div class="dropdown_labels unselectable hide"> -->
+<!-- <button id="label_but" onclick="myFunction_labels()" class="dropbtn2">Treatments</button> -->
+<!-- <div id="Label_dropdown" class="dropdown-content-labels"><input type="text" placeholder="Search Labels..." id="myInput_labels" onkeyup="filterFunction_labels()"></div> -->
+<!-- </div> -->
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<!--
+<div class="navbar">
+
+-->
+
+<div class="dropdown_nav2">
+
+    <div class="dropdown_nav-content2">
+        <!-- <div class="header"> -->
+        <!-- <h2>Projects</h2> -->
+        <!-- </div>    -->
+        <div class="row">
+            <div class="column" id="proj1" >
+                <!-- <button class="accordion" onclick="fitbounds_old()">Labels</button> -->
+                <!-- <button id='label_button' class="accordion"></button> -->
+                <!-- <div id= "label_panel" class="panel"> -->
+                <!-- </div> -->
+
+                <!-- <button id='label_button2' class="accordion"></button> -->
+                <div id= "label_pane2" class="panel2">
+                    <input style='width:100%; height:40px; font-size:16px' type="text" id="myInput" onkeyup="searchFunction()" placeholder="Type here to search for an anatomical label..."></input>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="../assets/js/navbar.js"></script>
+
+
+<!-- <div class="dropdown"> -->
+<!-- <button onclick="myFunction()" class="dropbtn">samples</button> -->
+<!-- <div id="myDropdown" class="dropdown-content"> -->
+<!-- <input type="text" placeholder="Search Samples..." id="myInput" onkeyup="filterFunction()"> -->
+
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div class="osd_container"> -->
+<div id="openseadragon1" class="openseadragon" style="width: 100%; left: 350px; height: 100%; filter: brightness(100%) contrast(100%); background-color: rgb(255, 255, 255);"></div>
+<script src="../assets/js/openseadragon1.js"></script>
+<!--<script src="../assets/js/openseadragontest.js"></script>-->
+<!-- style="background: none transparent; border: none; margin: 0px; padding: 0px; position: absolute; right: 0px; top: 0px;"-->
+
+
+<!-- <div id='nav_hover_button' tabindex="0"></div> -->
+<!-- </div> -->
+<!-- <div class="dropdown_labels unselectable hide"> -->
+<!-- <button id="label_but" onclick="myFunction_labels()" class="dropbtn2">Treatments</button> -->
+<!-- <div id="Label_dropdown" class="dropdown-content-labels"><input type="text" placeholder="Search Labels..." id="myInput_labels" onkeyup="filterFunction_labels()"></div> -->
+<!-- </div> -->
+<div id="tool_bar">
+    <div id="nav_left_10" tabindex="0" onclick="previous_button_10()"><img src="../assets/images/osd_assets/images/previous_pressed_double.png"></div>
+    <div id="nav_left_1" tabindex="0" onclick="previous_button_1()"><img src="../assets/images/osd_assets/images/previous_pressed.png"></div>
+    <div id="nav_right_1" tabindex="0" onclick="next_button_1()"><img src="../assets/images/osd_assets/images/next_pressed.png"></div>
+    <div id="nav_right_10" tabindex="0" onclick="next_button_10()"><img src="../assets/images/osd_assets/images/next_pressed_double.png"></div>
+</div>
+    <script src="../assets/js/toolbar.js"></script>
+<div id="stack_indicator_line" class="openseadragon" tabindex="0"></div>
+    {% if slide.id == '35532'%}
+    <script src="../assets/js/stackindicatorline1727.js"></script>
+    {% elseif slide.id == '35537'%}
+    <script src="../assets/js/stackindicatorline1731.js"></script>
+    {% elseif slide.id == '35536'%}
+    <script src="../assets/js/stackindicatorline1728.js"></script>
+    {% elseif slide.id == '493' %}
+    <script src="../assets/js/stackindicatorline493.js"></script>
+    {% elseif slide.id == '494' %}
+    <script src="../assets/js/stackindicatorline494.js"></script>
+    {% elseif slide.id == '496' %}
+    <script src="../assets/js/stackindicatorline496.js"></script>
+    {% elseif slide.id == '282'%}
+    <script src="../assets/js/stackindicatorline282.js"></script>
+    {% elseif slide.id == '285'%}
+    <script src="../assets/js/stackindicatorline285.js"></script>
+    {% elseif slide.id == '291'%}
+    <script src="../assets/js/stackindicatorline291.js"></script>
+    {% elseif slide.id == '293'%}
+    <script src="../assets/js/stackindicatorline293.js"></script>
+    {% elseif slide.id == '306'%}
+    <script src="../assets/js/stackindicatorline306.js"></script>
+    {% endif %}
+
+<!-- <div id='shopping_aisle_preview_div' tabindex="0"></div> -->
+<!-- <div id='current_location'tabindex="0"></div> -->
+<!-- <div id='preview_location'tabindex="0"></div> -->
+
+<!-- <div id='control_panel'> -->
+<!-- <div id='brightness_indicator'tabindex="0"></div> -->
+<!-- <div id='brightness_overlay'tabindex="0"></div> -->
+<!-- <div id='contrast_indicator'tabindex="0"></div> -->
+<!-- <div id='contrast_overlay'tabindex="0"></d	iv> -->
+{% if slide.id == '35532'%}
+<div id="slice_idx_display" class="unselectable">2/3<br><a style="color:gray;font-size:7px;">20_1731_3-3dpfC3can</a><br>
+    <span style="font-size:12px">Downloads<span><br><a style="color:white; font-size:12px" href="../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/20_1727_10-3dpfC10can.svg" target="_blank">vector file (1MB .svg)</a><a></a></span></span></div>
+<script>
+    // Create a new div element
+    var hiddenDiv = document.createElement('div');
+
+    // Set the style attributes for the div
+    hiddenDiv.style.height = '100px';
+    hiddenDiv.style.width = '100px';
+    hiddenDiv.style.visibility = 'hidden';
+    hiddenDiv.style.position = 'absolute';
+    hiddenDiv.style.top = '-9999px';
+
+    // Create an embed element for the SVG
+    var embedElement = document.createElement('embed');
+    embedElement.src = '../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/20_1727_10-3dpfC10can.svg';
+    embedElement.type = 'image/svg+xml';
+    embedElement.id = 'current_svg_20_1727_10-3dpfC10can';
+
+    // Append the embed element to the hidden div
+    hiddenDiv.appendChild(embedElement);
+
+    // Append the hidden div to the document body
+    document.body.appendChild(hiddenDiv);
+
+</script>
+{% elseif slide.id == '35537'%}
+<div id="slice_idx_display" class="unselectable">1/3<br><a style="color:gray;font-size:7px;">20_1731_3-3dpfC3can</a><br>
+    <span style="font-size:12px">Downloads<span><br><a style="color:white; font-size:12px" href="../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/20_1731_3-3dpfC3can.svg" target="_blank">vector file (1MB .svg)</a><a></a></span></span></div>
+<script>
+    // Create a new div element
+    var hiddenDiv = document.createElement('div');
+
+    // Set the style attributes for the div
+    hiddenDiv.style.height = '1px';
+    hiddenDiv.style.width = '1px';
+    hiddenDiv.style.visibility = 'hidden';
+    hiddenDiv.style.position = 'absolute';
+    hiddenDiv.style.top = '-9999px';
+
+    // Create an embed element for the SVG
+    var embedElement = document.createElement('embed');
+    embedElement.src = '../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/20_1731_3-3dpfC3can.svg';
+    embedElement.type = 'image/svg+xml';
+    embedElement.id = 'current_svg_20_1731_3-3dpfC3can';
+
+    // Append the embed element to the hidden div
+    hiddenDiv.appendChild(embedElement);
+
+    // Append the hidden div to the document body
+    document.body.appendChild(hiddenDiv);
+</script>
+{% elseif slide.id == '35536'%}
+<div id="slice_idx_display" class="unselectable">3/3<br><a style="color:gray;font-size:7px;">20_1731_3-3dpfC3can</a><br>
+    <span style="font-size:12px">Downloads<span><br><a style="color:white; font-size:12px" href="../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/20_1728_11-3dpfC11can.svg" target="_blank">vector file (1MB .svg)</a><a></a></span></span></div>
+<script>
+    // Create a new div element
+    var hiddenDiv = document.createElement('div');
+
+    // Set the style attributes for the div
+    hiddenDiv.style.height = '1px';
+    hiddenDiv.style.width = '1px';
+    hiddenDiv.style.visibility = 'hidden';
+    hiddenDiv.style.position = 'absolute';
+    hiddenDiv.style.top = '-9999px';
+
+    // Create an embed element for the SVG
+    var embedElement = document.createElement('embed');
+    embedElement.src = '../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/20_1731_11-3dpfC11can.svg';
+    embedElement.type = 'image/svg+xml';
+    embedElement.id = 'current_svg_20_1731_3-3dpfC3can';
+
+    // Append the embed element to the hidden div
+    hiddenDiv.appendChild(embedElement);
+
+    // Append the hidden div to the document body
+    document.body.appendChild(hiddenDiv);
+</script>
+{% elseif slide.id == '493' %}
+<div id="slice_idx_display" class="unselectable">1/3<br><a style="color:gray;font-size:7px;">21_493_3-3dpfC3can</a><br>
+    <span style="font-size:12px">Downloads<span><br><a style="color:white; font-size:12px" href="../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/21_493_7-3dpfS7can.svg" target="_blank">vector file (1MB .svg)</a><a></a></span></span></div>
+<script>
+    // Create a new div element
+    var hiddenDiv = document.createElement('div');
+
+    // Set the style attributes for the div
+    hiddenDiv.style.height = '1px';
+    hiddenDiv.style.width = '1px';
+    hiddenDiv.style.visibility = 'hidden';
+    hiddenDiv.style.position = 'absolute';
+    hiddenDiv.style.top = '-9999px';
+
+    // Create an embed element for the SVG
+    var embedElement = document.createElement('embed');
+    embedElement.src = '../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/21_493_7-3dpfS7can.svg';
+    embedElement.type = 'image/svg+xml';
+    embedElement.id = 'current_svg_21_493_3-3dpfC3can';
+
+    // Append the embed element to the hidden div
+    hiddenDiv.appendChild(embedElement);
+
+    // Append the hidden div to the document body
+    document.body.appendChild(hiddenDiv);
+</script>
+{% elseif slide.id == '494' %}
+<div id="slice_idx_display" class="unselectable">3/3<br><a style="color:gray;font-size:7px;">21_493_3-3dpfC3can</a><br>
+    <span style="font-size:12px">Downloads<span><br><a style="color:white; font-size:12px" href="../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/21_494_12-3dfS12can.svg" target="_blank">vector file (1MB .svg)</a><a></a></span></span></div>
+<script>
+    // Create a new div element
+    var hiddenDiv = document.createElement('div');
+
+    // Set the style attributes for the div
+    hiddenDiv.style.height = '1px';
+    hiddenDiv.style.width = '1px';
+    hiddenDiv.style.visibility = 'hidden';
+    hiddenDiv.style.position = 'absolute';
+    hiddenDiv.style.top = '-9999px';
+
+    // Create an embed element for the SVG
+    var embedElement = document.createElement('embed');
+    embedElement.src = '../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/21_494_12-3dfS12can.svg';
+    embedElement.type = 'image/svg+xml';
+    embedElement.id = 'current_svg_21_494_3-3dpfC3can';
+
+    // Append the embed element to the hidden div
+    hiddenDiv.appendChild(embedElement);
+
+    // Append the hidden div to the document body
+    document.body.appendChild(hiddenDiv);
+</script>
+{% elseif slide.id == '496' %}
+<div id="slice_idx_display" class="unselectable">2/3<br><a style="color:gray;font-size:7px;">21_493_3-3dpfC3can</a><br>
+    <span style="font-size:12px">Downloads<span><br><a style="color:white; font-size:12px" href="../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/21_496_11-3dpfS11can.svg" target="_blank">vector file (1MB .svg)</a><a></a></span></span></div>
+<script>
+    // Create a new div element
+    var hiddenDiv = document.createElement('div');
+
+    // Set the style attributes for the div
+    hiddenDiv.style.height = '1px';
+    hiddenDiv.style.width = '1px';
+    hiddenDiv.style.visibility = 'hidden';
+    hiddenDiv.style.position = 'absolute';
+    hiddenDiv.style.top = '-9999px';
+
+    // Create an embed element for the SVG
+    var embedElement = document.createElement('embed');
+    embedElement.src = '../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/21_496_11-3dpfS11can.svg';
+    embedElement.type = 'image/svg+xml';
+    embedElement.id = 'current_svg_21_496_3-3dpfC3can';
+
+    // Append the embed element to the hidden div
+    hiddenDiv.appendChild(embedElement);
+
+    // Append the hidden div to the document body
+    document.body.appendChild(hiddenDiv);
+</script>
+{% elseif slide.id == '282'%}
+<div id="slice_idx_display" class="unselectable">1/5<br><a style="color:gray;font-size:7px;">22_282_3-3dpfC3can</a><br>
+    <span style="font-size:12px">Downloads<span><br><a style="color:white; font-size:12px" href="../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/22_282_3-3dpfT1can.svg" target="_blank">vector file (1MB .svg)</a><a></a></span></span></div>
+<script>
+    // Create a new div element
+    var hiddenDiv = document.createElement('div');
+
+    // Set the style attributes for the div
+    hiddenDiv.style.height = '1px';
+    hiddenDiv.style.width = '1px';
+    hiddenDiv.style.visibility = 'hidden';
+    hiddenDiv.style.position = 'absolute';
+    hiddenDiv.style.top = '-9999px';
+
+    // Create an embed element for the SVG
+    var embedElement = document.createElement('embed');
+    embedElement.src = '../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/22_282_3-3dpfT1can.svg';
+    embedElement.type = 'image/svg+xml';
+    embedElement.id = 'current_svg_22_282_3-3dpfC3can';
+
+    // Append the embed element to the hidden div
+    hiddenDiv.appendChild(embedElement);
+
+    // Append the hidden div to the document body
+    document.body.appendChild(hiddenDiv);
+</script>
+{% elseif slide.id == '285'%}
+<div id="slice_idx_display" class="unselectable">2/5<br><a style="color:gray;font-size:7px;">22_282_3-3dpfC3can</a><br>
+    <span style="font-size:12px">Downloads<span><br><a style="color:white; font-size:12px" href="../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/22_285_4-3dpfT4can.svg" target="_blank">vector file (1MB .svg)</a><a></a></span></span></div>
+<script>
+    // Create a new div element
+    var hiddenDiv = document.createElement('div');
+
+    // Set the style attributes for the div
+    hiddenDiv.style.height = '1px';
+    hiddenDiv.style.width = '1px';
+    hiddenDiv.style.visibility = 'hidden';
+    hiddenDiv.style.position = 'absolute';
+    hiddenDiv.style.top = '-9999px';
+
+    // Create an embed element for the SVG
+    var embedElement = document.createElement('embed');
+    embedElement.src = '../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/22_285_4-3dpfT4can.svg';
+    embedElement.type = 'image/svg+xml';
+    embedElement.id = 'current_svg_22_285_3-3dpfC3can';
+
+    // Append the embed element to the hidden div
+    hiddenDiv.appendChild(embedElement);
+
+    // Append the hidden div to the document body
+    document.body.appendChild(hiddenDiv);
+</script>
+{% elseif slide.id == '291'%}
+<div id="slice_idx_display" class="unselectable">3/5<br><a style="color:gray;font-size:7px;">22_282_3-3dpfC3can</a><br>
+    <span style="font-size:12px">Downloads<span><br><a style="color:white; font-size:12px" href="../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/22_291_10-3dpfT10can.svg" target="_blank">vector file (1MB .svg)</a><a></a></span></span></div>
+<script>
+    // Create a new div element
+    var hiddenDiv = document.createElement('div');
+
+    // Set the style attributes for the div
+    hiddenDiv.style.height = '1px';
+    hiddenDiv.style.width = '1px';
+    hiddenDiv.style.visibility = 'hidden';
+    hiddenDiv.style.position = 'absolute';
+    hiddenDiv.style.top = '-9999px';
+
+    // Create an embed element for the SVG
+    var embedElement = document.createElement('embed');
+    embedElement.src = '../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/22_291_10-3dpfT10can.svg';
+    embedElement.type = 'image/svg+xml';
+    embedElement.id = 'current_svg_22_291_3-3dpfC3can';
+
+    // Append the embed element to the hidden div
+    hiddenDiv.appendChild(embedElement);
+
+    // Append the hidden div to the document body
+    document.body.appendChild(hiddenDiv);
+</script>
+{% elseif slide.id == '293'%}
+<div id="slice_idx_display" class="unselectable">4/5<br><a style="color:gray;font-size:7px;">22_282_3-3dpfC3can</a><br>
+    <span style="font-size:12px">Downloads<span><br><a style="color:white; font-size:12px" href="../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/22_293_12-3dpfT12can.svg" target="_blank">vector file (1MB .svg)</a><a></a></span></span></div>
+<script>
+    // Create a new div element
+    var hiddenDiv = document.createElement('div');
+
+    // Set the style attributes for the div
+    hiddenDiv.style.height = '1px';
+    hiddenDiv.style.width = '1px';
+    hiddenDiv.style.visibility = 'hidden';
+    hiddenDiv.style.position = 'absolute';
+    hiddenDiv.style.top = '-9999px';
+
+    // Create an embed element for the SVG
+    var embedElement = document.createElement('embed');
+    embedElement.src = '../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/22_293_12-3dpfT12can.svg';
+    embedElement.type = 'image/svg+xml';
+    embedElement.id = 'current_svg_22_293_3-3dpfC3can';
+
+    // Append the embed element to the hidden div
+    hiddenDiv.appendChild(embedElement);
+
+    // Append the hidden div to the document body
+    document.body.appendChild(hiddenDiv);
+</script>
+{% elseif slide.id == '306'%}
+<div id="slice_idx_display" class="unselectable">5/5<br><a style="color:gray;font-size:7px;">22_282_3-3dpfC3can</a><br>
+    <span style="font-size:12px">Downloads<span><br><a style="color:white; font-size:12px" href="../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/22_306_25-3dpfT25can.svg" target="_blank">vector file (1MB .svg)</a><a></a></span></span></div>
+<script>
+    // Create a new div element
+    var hiddenDiv = document.createElement('div');
+
+    // Set the style attributes for the div
+    hiddenDiv.style.height = '1px';
+    hiddenDiv.style.width = '1px';
+    hiddenDiv.style.visibility = 'hidden';
+    hiddenDiv.style.position = 'absolute';
+    hiddenDiv.style.top = '-9999px';
+
+    // Create an embed element for the SVG
+    var embedElement = document.createElement('embed');
+    embedElement.src = '../../../assets/EC2/output/anatomical_reference_histology_zf/Coronal_3dpf_svg/22_306_25-3dpfT25can.svg';
+    embedElement.type = 'image/svg+xml';
+    embedElement.id = 'current_svg_22_306_3-3dpfC3can';
+
+    // Append the embed element to the hidden div
+    hiddenDiv.appendChild(embedElement);
+
+    // Append the hidden div to the document body
+    document.body.appendChild(hiddenDiv);
+</script>
+{% endif %}
+</body>
+
+<script src="../assets/js/openseadragon.js"></script>
+<script src="../assets/js/openseadragon.min.js"></script>
+<script src="../assets/js/openseadragon-scalebar.js"></script>
+<script src="../assets/js/openseadragon-svg-overlay.js"></script>
+<script src="../assets/js/annotations/dist/openseadragon-annotations.js"></script>
+<script src="../assets/js/dat.gui.min.js"></script>
+<script src="../assets/js/openseadragon-filtering.js"></script>
+<script src="../assets/js/cl_atlas_v4.5_carusel.js"></script>
+<script src="../assets/js/new.js"></script>
+<!-- <script src="../assets/js/flatten.js"></script> -->
+<!-- <script src="../assets/js/tinyqueue.js"></script> -->
+<script src="../assets/js/polylabel_min.js"></script>
+<!-- <script src="./assets/js/openseadragonrgb.js"></script> -->
+<script>
+    document.addEventListener('keydown', function(event) {
+        switch (event.key) {
+            case 'f':
+                // Flip the image
+                var degrees = viewer.viewport.getRotation();
+                var newDegrees = (degrees + 180) % 360;
+                viewer.viewport.setRotation(newDegrees);
+
+                // Flip the SVG overlay
+                var svgOverlay = viewer.canvasOverlay.canvas();
+                svgOverlay.style.transform = `scaleY(-1)`;
+                svgOverlay.style.transformOrigin = 'center';
+                break;
+            case 'r':
+                // Rotate the image
+                var degrees = viewer.viewport.getRotation();
+                var newDegrees = (degrees + 90) % 360;
+                viewer.viewport.setRotation(newDegrees);
+
+                // Rotate the SVG overlay
+                var svgOverlay = viewer.canvasOverlay.canvas();
+                svgOverlay.style.transform = `rotate(${newDegrees}deg)`;
+                svgOverlay.style.transformOrigin = 'center';
+                break;
+        }
+    });
+</script>
+<script>
+    function searchFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        <!-- console.log(filter) -->
+        ul = document.getElementById("label_pane2");
+        li = ul.getElementsByTagName('div');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            <!-- console.log(txtValue) -->
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                target=li[i]
+                target.classList.add('show');
+                target.classList.add('active');
+                target.classList.add('found');
+                <!-- target.style.backgroundColor="rgba(85,85,85,.1)"; -->
+                target.style.borderTop="solid thin";
+                target.style.borderBottom="solid thin";
+                target.style.borderRight="solid thin";
+
+                var els = [];
+                while (target) {
+                    if (target.classList.contains("trunklapse")){
+                        target=0;
+                    }
+                    else{
+                        els.unshift(target);
+                        target = target.parentNode;
+                        target.classList.add('show');
+                        target.classList.add('active');
+
+                        <!-- target.classList.add('found'); -->
+                    }
+                }
+                <!-- li[i].classList.add('show'); -->
+                <!-- li[i].classList.add('active'); -->
+
+            }
+            else {
+                li[i].classList.remove('show');
+                li[i].classList.remove('active');
+                <!-- li[i].style.backgroundColor="rgba(0,0,0,.3)"; -->
+                li[i].style.borderTop="none";
+                li[i].style.borderBottom="none";
+                li[i].style.borderRight="none";
+            }
+        }
+        var acc = document.getElementsByClassName("panel2");
+        for (i = 0; i < acc.length; i++) {
+            acc[i].style.maxHeight = acc[i].scrollHeight + "px";
+        }
+        <!-- console.log(filter) -->
+        if (filter==""){
+            for (i = 0; i < li.length; i++) {
+                li[i].classList.remove('show');
+                li[i].classList.remove('active');
+                li[i].classList.remove('found');
+                <!-- li[i].style.backgroundColor="rgba(0,0,0,.3)"; -->
+                li[i].style.borderTop="none";
+                li[i].style.borderBottom="none";
+                li[i].style.borderRight="none";
+            }
+        }
+    }
+</script>
+
+<!-- <script src="./assets/js/openseadragonrgb.js"></script> -->
+<!-- <script src="../assets/js/openseadragon_2.5.js"></script> -->
+</html>
